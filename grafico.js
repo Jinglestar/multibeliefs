@@ -236,10 +236,10 @@ Qualtrics.SurveyEngine.addOnload(function() { // funzione built-in del sito che 
                 }, 
                 y: 10, 
                 formatter: function(e) {
-                    if (this.value == 0) return '6,0,0'; 
-                    if (this.value == 1) return '2,2,2'; 
-                    if (this.value == 2) return '4,3,3'; 
-                    if (this.value == 3) return '5,5,1'
+                    if (this.value == 0) return 'Option A'; 
+                    if (this.value == 1) return 'Option B'; 
+                    if (this.value == 2) return 'Option C'; 
+                    if (this.value == 3) return 'Option D';
                 } 
         }, 
         lineWidth: 0, 
