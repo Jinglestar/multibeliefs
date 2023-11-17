@@ -1,0 +1,63 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/draggable-points.js"></script>
+
+<style>
+#maincontainer { overflow: auto; /* white-space: nowrap; */ padding: 0!important; max-width: 770px;}
+#maincontainer > div { width: 140px; height: 100px; display: inline-block; }
+.QuestionText{padding-bottom: 0!important;position: relative;}
+div.InnerInner > div.QuestionBody{padding-bottom: 0!important;}
+#Buttons{display: none;}
+.LoopButton{border: none; color: #fff!important; border-radius: 4px; font-size: 16px; background: #007ac0; font-weight: 400; max-height: 34px; padding: 10px 20px; /* width: 200px; */ }
+</style>
+
+<!-- blocco 1 -->
+<h2 style="text-align: center">Some people hold the view that:</h2>
+<br>
+<table role="presentation" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <td class="CarouselCardLeftContainer CarouselPaddingRight"> <button class="CarouselChevronContainer" aria-label="Previous drawing" style="height: 72px; width: 72px;">
+                    <div class="CarouselChevronBackground">
+                        <div class="CarouselChevronBackgroundAnimation" style="display: none;"></div>  <svg id="left" class="CarouselChevron" focusable="false" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg" data-icontype="ChevronLeft">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0297 6.97034C14.3229 7.2622 14.3235 7.73596 14.031 8.02853L10.0598 12.0001L14.031 15.9716C14.3235 16.2642 14.3229 16.738 14.0297 17.0298C13.7364 17.3217 13.2616 17.3211 12.969 17.0285L8.68184 12.7409C8.48487 12.5442 8.37451 12.2777 8.37451 12.0001C8.37451 11.7227 8.48472 11.4563 8.68144 11.2596L12.969 6.97163C13.2616 6.67907 13.7364 6.67849 14.0297 6.97034Z"></path>
+                        </svg>
+                    </div>
+                </button> </td>
+            <td>
+                <div id="draw">&nbsp;</div>
+            </td>
+            <td class="CarouselCardRightContainer CarouselPaddingLeft"> <button class="CarouselChevronContainer" aria-label="Next drawing" style="height: 72px; width: 72px;">
+                    <div class="CarouselChevronBackground">
+                        <div class="CarouselChevronBackgroundAnimation" style="display: none;"></div>  <svg id="right" class="CarouselChevron" focusable="false" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg" data-icontype="ChevronRight">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.97032 17.0297C9.67707 16.7378 9.67649 16.2641 9.96903 15.9715L13.9402 12L9.96903 8.0284C9.67649 7.73584 9.67707 7.26208 9.97032 6.97022C10.2636 6.67837 10.7384 6.67895 11.031 6.97151L15.3182 11.2591C15.5149 11.4558 15.6255 11.7225 15.6255 12C15.6255 12.2774 15.5153 12.5438 15.3186 12.7404L11.031 17.0284C10.7384 17.321 10.2636 17.3215 9.97032 17.0297Z"></path>
+                        </svg>
+                    </div>
+                </button> </td>
+        </tr>
+</table>
+
+
+<br>
+<div style="text-align:center; margin-right:0; margin-left:0; display:flex;">
+    <input class="LoopButton" id="clear" style="margin-right: auto;" value=" clear view " type="button">
+    <input class="LoopButton" id="add" style="margin-left: auto;" value=" add view " type="button">
+</div>
+
+<!-- blocco 2 -->
+<div id="maincontainer">
+    <div id="container1" style="width: 153px!important;">&nbsp;</div>
+    <div id="container2"></div>
+    <div id="container3"></div>
+    <div id="container4"></div>
+    <div id="container5"></div>
+    <div id="container6" style="width: 153px!important;"></div>
+    <div id="container7"></div>
+    <div id="container8"></div>
+    <div id="container9"></div>
+    <div id="container10"></div>
+</div>
+
+<!-- blocco 3 -->
+<div style="text-align:center; margin-right:0; margin-left:0; display:flex;">
+&nbsp;
+    <input class="LoopButton" id="close" style="margin-right: 0; margin-left: auto;" value=" finish " type="button">
+</div>
